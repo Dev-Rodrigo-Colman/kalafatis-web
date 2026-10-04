@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kalafatis · Hamburguesas, picadas y birra en la vereda</title>
+<meta name="description" content="Kalafatis: hamburguesas, picadas, tragos y merienda. Pedí online por WhatsApp.">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta name="theme-color" content="#14110F">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <img class="logo" src="img/logo.png" alt="Kalafatis">
+  <img class="neon" src="img/hero.jpg" alt="Letrero de neón: Birra en la vereda">
+  <h1>Hamburguesas, picadas y tragos</h1>
+  <b class="tag">#UnClásicoDeLaCiudad</b>
+  <span class="status" id="st"><i class="dot"></i><span></span></span>
+</header>
+<div class="perks"><button class="pk" data-go="menu"><img src="img/icono-menu.png" alt=""><span>Menú</span></button><button class="pk" data-go="info"><img src="img/icono-info.png" alt=""><span>Info</span></button><button class="pk" data-go="amigos"><img src="img/icono-amigos.png" alt=""><span>Amigos</span></button><button class="pk" data-go="pet"><img src="img/icono-pet.png" alt=""><span>Petfriendly</span></button><button class="pk" data-go="merienda"><img src="img/icono-merienda.png" alt=""><span>Merienda</span></button><button class="pk" data-go="drinks"><img src="img/icono-drinks.png" alt=""><span>Drinks</span></button></div>
+<div class="sticky">
+  <div class="search"><input id="q" type="search" placeholder="Buscar en la carta"></div>
+  <nav id="nav"></nav>
+</div>
+<main id="main"></main>
+<div class="ov" id="mov"></div>
+<div class="drawer" id="mod" role="dialog" aria-label="La merienda">
+  <div class="dh"><h2>La merienda</h2><button id="mx" aria-label="Cerrar">&times;</button></div>
+  <div class="db">
+    <img class="mimg" src="img/merienda.jpg" alt="La merienda: brownie y café con crema">
+    <p class="msub">Desde las 14:00 · consultá los sabores por WhatsApp.</p>
+    <div class="mb"><button id="merPost">Ver postres</button><button id="merWa" class="alt">Consultar</button></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<button class="fab" id="fab">Ver pedido (<span id="n">0</span>)</button>
+<div class="ov" id="ov"></div>
+<div class="drawer" id="dr">
+  <div class="dh"><h2>Tu pedido</h2><button id="x" aria-label="Cerrar">&times;</button></div>
+  <div class="db">
+    <div id="lines"></div>
+    <div class="fields">
+      <label>Tipo de pedido</label>
+      <div class="tog" id="ot"><button data-t="Delivery" class="on">Delivery</button><button data-t="Retiro">Retiro</button><button data-t="Comer en el local">En el local</button></div>
+      <label>Nombre</label><input id="nm" placeholder="Tu nombre">
+      <div id="adw"><label>Dirección / referencia</label><input id="ad" placeholder="Calle, número, referencia"></div>
+      <label>Notas (opcional)</label><textarea id="nt" rows="2" placeholder="Ej: sin cebolla"></textarea>
+    </div>
+  </div>
+  <div class="df"><div class="tot"><span>Total</span><span id="tt">₲ 0</span></div><button class="wa" id="wa" disabled>Confirmar pedido por WhatsApp</button></div>
+</div>
+<footer id="info">
+  <b class="disp ft">Kalafatis</b>
+  <div class="hrs"><div><span>Lunes</span><em>Cerrado</em></div><div><span>Mar a Vie</span><em>11:00 a 00:00</em></div><div><span>Sáb y Dom</span><em>16:00 a 01:00</em></div></div>
+  <p>Menú de cocina: 18:00 a 00:00 hs</p>
+  <p>Tte. Esteban Martínez esq. Gral. Caballero N244<br><a href="https://maps.app.goo.gl/5hhCRYJyHhjQBdFS6" target="_blank" rel="noopener">Cómo llegar</a></p>
+  <p>Info y reservas: <a href="https://wa.me/595971565500" target="_blank" rel="noopener">0971 565 500</a> · <a href="https://instagram.com/kalafatisbar" target="_blank" rel="noopener">@kalafatisbar</a></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
